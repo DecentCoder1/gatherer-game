@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#game {
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.skill, .building {
+    margin-bottom: 20px;
+}
