@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Resource Gathering Idle Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Enhanced Resource Gathering Idle Game</h1>
+    <div id="game">
+        <p>Wood: <span id="wood">0</span></p>
+        <p>Stone: <span id="stone">0</span></p>
+        <p>Iron: <span id="iron">0</span></p>
+        <p>Gold: <span id="gold">0</span></p>
+        <p>Gathering rate (per second): <span id="gatheringRate">1</span> resources</p>
+        
+        <button id="upgradeGathering">Upgrade Gathering (Cost: <span id="gatheringUpgradeCost">10</span> resources)</button>
+        
+        <div id="skills">
+            <h2>Skills</h2>
+            <div class="skill">
+                <p>Wood Cutting Skill (Cost: <span class="skillCost" id="woodSkillCost">50</span> resources, Bonus: <span class="skillBonus" id="woodSkillBonus">1</span> wood/sec)</p>
+                <button id="buyWoodSkill">Buy Wood Cutting Skill</button>
+            </div>
+            <div class="skill">
+                <p>Stone Mining Skill (Cost: <span class="skillCost" id="stoneSkillCost">100</span> resources, Bonus: <span class="skillBonus" id="stoneSkillBonus">1</span> stone/sec)</p>
+                <button id="buyStoneSkill">Buy Stone Mining Skill</button>
+            </div>
+            <div class="skill">
+                <p>Iron Extraction Skill (Cost: <span class="skillCost" id="ironSkillCost">200</span> resources, Bonus: <span class="skillBonus" id="ironSkillBonus">1</span> iron/sec)</p>
+                <button id="buyIronSkill">Buy Iron Extraction Skill</button>
+            </div>
+            <div class="skill">
+                <p>Gold Panning Skill (Cost: <span class="skillCost" id="goldSkillCost">500</span> resources, Bonus: <span class="skillBonus" id="goldSkillBonus">1</span> gold/sec)</p>
+                <button id="buyGoldSkill">Buy Gold Panning Skill</button>
+            </div>
+        </div>
+        
+        <div id="buildings">
+            <h2>Buildings</h2>
+            <div class="building">
+                <p>Wood Factory (Cost: <span class="buildingCost" id="woodFactoryCost">1000</span> resources, Production: <span class="buildingProduction" id="woodFactoryProduction">5</span> wood/sec)</p>
+                <button id="buyWoodFactory">Buy Wood Factory</button>
+            </div>
+            <div class="building">
+                <p>Stone Quarry (Cost: <span class="buildingCost" id="stoneQuarryCost">2000</span> resources, Production: <span class="buildingProduction" id="stoneQuarryProduction">5</span> stone/sec)</p>
+                <button id="buyStoneQuarry">Buy Stone Quarry</button>
+            </div>
+            <div class="building">
+                <p>Iron Mine (Cost: <span class="buildingCost" id="ironMineCost">5000</span> resources, Production: <span class="buildingProduction" id="ironMineProduction">2</span> iron/sec)</p>
+                <button id="buyIronMine">Buy Iron Mine</button>
+            </div>
+            <div class="building">
+                <p>Gold Mine (Cost: <span class="buildingCost" id="goldMineCost">10000</span> resources, Production: <span class="buildingProduction" id="goldMineProduction">1</span> gold/sec)</p>
+                <button id="buyGoldMine">Buy Gold Mine</button>
+            </div>
+        </div>
+        
+        <div id="events">
+            <h2>Events</h2>
+            <p id="eventMessage">No events</p>
+        </div>
+        
+        <div id="achievements">
+            <h2>Achievements</h2>
+            <p id="achievementMilestone">Milestone Reached: None</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
